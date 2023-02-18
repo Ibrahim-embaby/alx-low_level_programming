@@ -11,11 +11,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	printf("Last digit of %d", n);
-	while(n % 10 > 10)
+	while(abs(n) % 10 > 10)
 	{
 		n = n % 10;
 	}
-	printf("is %d", n);
+	printf(" is %d", n);
 
 	return (0);
 }
