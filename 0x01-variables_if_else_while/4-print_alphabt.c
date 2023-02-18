@@ -11,13 +11,13 @@ int main(void)
 	{
 		if (a == 'e' || a == 'q')
 		{
-			continue;
+			a++;
 		}
 		else
 		{
 			putchar(a);
+			a++;
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);
