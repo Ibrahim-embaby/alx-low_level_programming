@@ -11,27 +11,24 @@ void rev_string(char *s)
 	if (*s == '\0')
 	{
 		return;
-	} else
-	{
-		while (*s != '\0')
-		{
-			s++;
-		}
-		s--;
-		while (k != s)
-		{
-			char tmp = *s;
-			char *c = s;
-
-			while (c != k)
-			{
-				*c = *(c - 1);
-				c--;
-			}
-			*k = tmp;
-			k++;
-		}
-		s = d;
-
 	}
+	while (*s != '\0')
+	{
+		s++;
+	}
+	s--;
+	while (k != s)
+	{
+		char tmp = *s;
+		char *c = s;
+
+		while (c != k)
+		{
+			*c = *(c - 1);
+			c--;
+		}
+		*k = tmp;
+		k++;
+	}
+	s = d;
 }
