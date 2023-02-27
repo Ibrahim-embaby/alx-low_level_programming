@@ -10,6 +10,7 @@ void puts2(char *str)
 		_putchar(*str);
 		if (*(str + 1) == '\0')
 		{
+			_putchar('\n');
 			return;
 		}
 		str = str + 2;
